@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Anime Template">
+    <meta name="keywords" content="Anime, unica, creative, html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>회원가입</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+
+    <!-- Css Styles -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="css/elegant-icons.css" type="text/css">
+    <link rel="stylesheet" href="css/plyr.css" type="text/css">
+    <link rel="stylesheet" href="css/nice-select.css" type="text/css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
+    <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="css/search.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Font Icon -->
+    <link rel="stylesheet" href="fonts/material-icon/css/material-design-iconic-font.min.css">
+
+    <!-- Main css -->
+    <link rel="stylesheet" href="css/register.css">
+
+</head>
+
+<body>
+    <!-- Page Preloder -->
+    <div id="preloder">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Header Section Begin -->
+    <nav class="navbar bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="./index.html"><img src="img/trending/wakenter.png" style="width: 150px;" alt="logo"></a>
+            <div class="s128">
+                <form>
+                    <div class="inner-form">
+                        <div class="row">
+                            <div class="input-field first" id="first">
+                                <input class="input" id="inputFocus" type="text" placeholder="Keyword" />
+                                <button class="clear" id="clear"></button>
+                            </div>
+                        <a href="./login.html"><i class="fa-solid fa-user" style="font-size: 40px; margin: 10px;"></i></a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <!-- Header End -->
+
+    <!-- Normal Breadcrumb Begin -->
+    <section class="normal-breadcrumb set-bg" data-setbg="img/trending/">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <div class="normal__breadcrumb__text">
+                        <p>Welcome to the Search Streamer</p>
+                        <h2>Sign In</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Normal Breadcrumb End -->
+
+    <!-- Login Section Begin -->
+    <div class="main">
+
+        <div class="container">
+            <div class="sign-up-content">
+                    <div class="form-radio">
+                        <input type="radio" name="member_level" value="wathcer" id="watcher" checked="checked" />
+                        <label for="watcher">시청자</label>
+
+                        <input type="radio" name="member_level" value="streamer" id="streamer" />
+                        <label for="streamer">방송인</label>
+                    </div>
+
+                    <div class="form-textbox row">
+                        <label for="email_id">로그인ID</label>
+                        <input type="email" name="email_id" id="email_id" placeholder="abcd@email.com" />
+                    </div>
+                    
+                    <div class="form-textbox row">
+                        <label for="password1">비밀번호</label>
+                        <input type="password1" name="password1" id="password1" />
+                    </div>
+
+                    <div class="form-textbox row">
+                        <label for="password2">비밀번호 확인</label>
+                        <input type="password2" name="password2" id="password2" />
+                    </div>
+
+                    <div class="form-textbox row form-bottom" style="border-radius: 50px;">
+                        <div class="col" style="background-color: white; border-bottom-left-radius: 7px;" >
+                            <label for="profile">프로필 사진</label>
+                        </div>
+                        <div class="col-10" style="background-color: white; border-bottom-right-radius: 7px;">
+                            <div id="image_container">
+                                <img id="preview" style="width: 50%;"/>
+                            </div>
+                            <input type="file" onchange="readURL(this);" class="profile bg-white" id="profile" style="border: 0;"> 
+                            <!-- <input type="file" onchange="setThumbnail(event);" class="profile bg-white" id="profile" style="border: 0; width: 50%;"> -->
+                        </div>
+                    </div> 
+                    <br>
+                    
+                    <div class="form-textbox row">
+                        <input type="submit" name="submit" id="submit" class="submit" value="Create account" />
+                    </div>
+                </form>
+
+                <p class="loginhere">
+                    Already have an account ?<a href="#" class="loginhere-link"> Log in</a>
+                </p>
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- Login Section End -->
+
+    <!-- Footer Section Begin -->
+    <footer class="footer">
+        <div class="page-up">
+            <a href="#" id="scrollToTopButton"><span class="arrow_carrot-up"></span></a>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="footer__logo">
+                        <a href="./index.html"><img src="img/trending/stream.jpg" alt=""></a>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="footer__nav">
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <p style="color: white;"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                      Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | made with EZEN <i class="fa fa-heart" aria-hidden="true"></i></a>
+                      <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+    
+                  </div>
+              </div>
+          </div>
+      </footer>
+      <!-- Footer Section End -->
+
+      <!-- Search model Begin -->
+      <div class="search-model">
+        <div class="h-100 d-flex align-items-center justify-content-center">
+            <div class="search-close-switch"><i class="icon_close"></i></div>
+            <form class="search-model-form">
+                <input type="text" id="search-input" placeholder="Search here.....">
+            </form>
+        </div>
+    </div>
+    <!-- Search model end -->
+
+    <!-- Js Plugins -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/player.js"></script>
+    <script src="js/jquery.nice-select.min.js"></script>
+    <script src="js/mixitup.min.js"></script>
+    <script src="js/jquery.slicknav.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+<script>
+    var btnDelete = document.getElementById('clear');
+    var inputFocus = document.getElementById('inputFocus');
+    //- btnDelete.on('click', function(e) {
+    //-   e.preventDefault();
+    //-   inputFocus.classList.add('isFocus')
+    //- })
+    //- inputFocus.addEventListener('click', function() {
+    //-   this.classList.add('isFocus')
+    //- })
+    btnDelete.addEventListener('click', function(e)
+    {
+      e.preventDefault();
+      inputFocus.value = ''
+    })
+    document.addEventListener('click', function(e)
+    {
+      if (document.getElementById('first').contains(e.target))
+      {
+        inputFocus.classList.add('isFocus')
+      }
+      else
+      {
+        // Clicked outside the box
+        inputFocus.classList.remove('isFocus')
+      }
+    });
+
+	// function setThumbnail(event){
+	// 	var reader = new FileReader();
+		
+	// 	reader.onload = function(event){
+    //         var img = document.createElement("img");
+	// 		img.setAttribute("src", event.target.result);
+	// 		document.querySelector("div#image_container").appendChild(img);
+	// 	};
+		
+	// 	reader.readAsDataURL(event.target.files[0]);
+	// };
+
+    function readURL(input) {
+  if (input.files && input.files[0]) {
+    var reader = new FileReader();
+    reader.onload = function(e) {
+      document.getElementById('preview').src = e.target.result;
+    };
+    reader.readAsDataURL(input.files[0]);
+  } else {
+    document.getElementById('preview').src = "";
+  }
+}
+
+</script>
+
+
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+
+
+</html>
